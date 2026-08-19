@@ -16,7 +16,7 @@ if (config.use_env_variable) {
 
   const url = new URL(connectionUrl);
 
-  url.serachParams.delete('sslmode');
+  url.searchParams.delete('sslmode');
 
   sequelize = new Sequelize(url.toString(), {
     ...config,
